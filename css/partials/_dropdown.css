@@ -1,0 +1,14 @@
+.choice-container {
+  width: 15%;
+}
+
+.choice-container {
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
+.dropdown-title-container {
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color: grey;
+}

@@ -1,0 +1,154 @@
+
+
+.recipeWrapper { //wraps around the recipe container & recipe button container
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+	margin-bottom: 2%;
+}
+
+.container { //affects both the recipe container & recipe button container
+	width: 50%;
+}
+
+.recipeContainer { //left side, holds the cupcake name and image
+	background-color: $peach;
+	text-align: center;
+}
+
+.recipeName {
+	color: white;
+	margin-bottom: 2%;
+}
+
+.gallery-image { //cupcake image, left
+	width: 225px;
+	height: 225px;
+	display: block;
+	margin: 0 auto;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.emptyDiv { //below cupcake img(bg img) to make space
+	height: 20px;
+}
+
+.buttonContainer { //right side, holds the btn and then recipe ingredient deets
+	background-color: $mainGreen;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+}
+
+.button { // get recipe details
+  width: 40%;
+  background-color: pink;
+  color: white;
+  font-size: 25px;
+  padding: 2%;
+  text-transform: uppercase;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+	margin: 0 auto;
+}
+
+.linkContainer {
+	margin-top: 2%;
+	font-size: 20px;
+	color: white;
+	padding: 2% 4%;
+		a {
+			text-decoration: none;
+			color: $dkorange;
+			text-transform: uppercase;
+		}
+
+		a:hover {
+			color: $pink;
+		}
+
+		a:visited {
+			color: $seablue;
+		}
+}
+
+.footer-button {
+  width: 20%;
+  padding: 10px;
+  margin-bottom: 1%;
+  	a {
+  		padding: 2% 40%;
+  	}
+}
+
+//Portrait tablet and small desktops 
+@media (max-width: 940px) {
+
+	.gallery-image { //cupcake image, left
+		width: 195px;
+		height: 195px;
+	}
+
+	.recipeName {
+		margin: 5% 5%;
+    font-size: 25px;
+	}
+
+	.button {
+		width: 60%;
+	}
+
+	.footer-button {
+		width: 20%;
+		padding: 1%;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+
+	.recipeWrapper { //wraps around the recipe container & recipe button container
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		margin-bottom: 2%;
+	}
+
+	.container {
+		width: 100%;
+	}
+
+	.recipeName {
+    font-size: 20px;
+	}
+
+	.button { // get recipe details
+	  width: 50%;
+	  font-size: 20px;	  
+	}
+
+	.footer-button {
+		width: 20%;
+    padding: 1%;
+    	a {
+    		padding: 5% 40%;
+    	}
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+	.recipeName {
+    font-size: 16px;
+	}
+
+	.footer-button a {
+		padding: 10% 30%;
+	}
+}

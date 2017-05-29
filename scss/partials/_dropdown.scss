@@ -1,0 +1,74 @@
+
+
+.choice-container {
+ 	width: 15%;
+}
+
+.alcohol-select {
+	margin: 15% 0 4% 15%;
+	// margin-left: 4%;
+}
+
+.alcohol-choice {
+	width: 100%;
+	padding-bottom: 2%;
+		a {
+			text-decoration: none;
+			text-transform: uppercase;
+			color: $dkorange;
+			font-weight: 400;
+		}
+}
+
+.layoutImagesContainer {
+	width: 100%;
+	height: 90%;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: space-between; 
+}
+
+
+.layoutImage {
+	width: 100%;
+	margin-left: 2%;
+		img {
+		width: 100%;
+		margin: 5% 4%;
+	}		
+}
+
+
+@media (max-width: 940px) { //green
+	
+	.choice-container {
+	 	width: 25%;
+	}
+	
+	.alcohol-choice {
+		padding: 6% 0;
+		font-size: 20px;
+	}
+
+	.layoutImagesContainer {
+		height: 85%;
+	}
+
+}
+
+@media (max-width: 768px) { //purple
+
+	.choice-container {
+	 	width: 40%;
+	}
+
+	.layoutImagesContainer {
+		height: 82%;
+	}
+
+	.hide {
+		display: none;
+	}
+
+}
